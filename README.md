@@ -20,7 +20,6 @@ It follows the [JAMstack architecture](https://jamstack.org) by using Git as a s
 - Uses `gatbsy-image` with Netlify-CMS preview support
 - Separate components for everything
 - Netlify deploy configuration
-- Netlify function support, see `src/lambda` folder
 - Perfect score on Lighthouse for SEO, Accessibility and Performance (wip:PWA)
 - ..and more
 
@@ -42,7 +41,7 @@ After clicking that button, you’ll authenticate with GitHub and choose a repos
 $ git clone https://github.com/[GITHUB_USERNAME]/[REPO_NAME].git
 $ cd [REPO_NAME]
 $ yarn
-$ npm run start
+$ npm run develop
 ```
 To test the CMS locally, you'll need run a production build of the site:
 ```
@@ -73,8 +72,3 @@ npm install --global --production windows-build-tools
 
 ## Purgecss
 This plugin uses [gatsby-plugin-purgecss](https://www.gatsbyjs.org/packages/gatsby-plugin-purgecss/) and [bulma](https://bulma.io/). The bulma builds are usually ~170K but reduced 90% by purgecss.
-
-# CONTRIBUTING
-
-Contributions are always welcome, no matter how large or small. Before contributing,
-please read the [code of conduct](CODE_OF_CONDUCT.md).
